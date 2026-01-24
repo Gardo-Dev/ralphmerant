@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans';
+  color: #1F1F1F;
+}
+
+body {
+      background-color: #F4F1EC;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #BFC2C0;
+    
+}
+
+.nav-right {
+    display: flex;
+    gap: .75em;
+    font-size: 14px;
+}
+
+.nav-left {
+    font-size: 18px;
+}
+
+.name {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.name p {
+        font-family: 'Bonheur Royale';
+}
+
+img {
+    width: 460px;
+    height: auto;
+}
+
+.about p {
+    font-family: 'DM Sans';
+    text-align: justify;
+    padding: 25px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #BFC2C0;
+}
+
+.foot img {
+    height: auto;
+    width: 20px;
+}
+
+@media only screen and (max-width: 461px) {
+.homepage .home-img2{
+    display: none;
+}
+
+.about .home-img3 {
+    display: none;
+}
+}
+
+@media only screen and (min-width: 461px) and (max-width: 960px) {
+.homepage .home-img2 {
+    display: none;
+}
+
+.homepage .home-img1 {
+    display: none;
+}
+
+.about .home-img3 {
+    display: none;
+}
+
+.homepage {
+    background-image: url(../assets/hs1jpeg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+
+.name p {
+    font-size: 80px;
+    text-align: left;
+    color: #F4F1EC;
+}
+}
+
+@media only screen and (min-width: 961px) {
+.name p {
+    font-size: 75px;
+}
+
+.navbar {
+    max-width: 1500px;
+    margin: auto;
+    
+}
+
+.nav-right {
+    gap: 1em;
+    font-size: 20px;
+}
+
+.nav-left {
+    font-size: 30px;
+}
+
+.home-images {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.home-img1 {
+    flex: 1;
+}
+
+.home-img2 {
+    flex: 1;
+}
+
+.home-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    display: flex;
+    
+    justify-content: space-between;
+    background-color: #7E846B;
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.about p {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+}
+
+/* end homepage */
